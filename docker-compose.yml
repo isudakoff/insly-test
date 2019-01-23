@@ -1,0 +1,38 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    build:
+      context: ./
+      dockerfile: docker/nginx/Dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./src/1:/var/www/0
+      - ./src/1:/var/www/1
+      - ./src/2:/var/www/2
+      - ./src/3:/var/www/3
+    ports:
+      - "127.0.0.1:8080:80"
+      - "127.0.0.1:8081:81"
+      - "127.0.0.1:8082:82"
+      - "127.0.0.1:8083:83"
+    networks:
+      - default
+
+  php:
+    build:
+      context: ./
+      dockerfile: docker/php-fpm/Dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./src:/var/www:cached
+    ports:
+      - "127.0.0.1:9009:9000"
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
+    name: insly2
