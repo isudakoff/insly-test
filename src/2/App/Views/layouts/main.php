@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
         <div id="menu">
             <ul class="nav">
                 <li class="nav-item">
@@ -20,7 +19,6 @@
                 </li>
             </ul>
         </div>
-    </div>
 
     <div id="content">
         <h1><?= $page_header ?></h1>

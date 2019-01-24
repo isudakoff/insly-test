@@ -84,8 +84,7 @@ th {
 }
 
 #content {
-    max-width: 1024px;
-    margin: 0 auto;
+    padding: 0 15px;
 }
 
 #menu {
@@ -213,15 +212,39 @@ th {
     background-color: rgba(0,0,0,.05);
 }
 
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-@media (min-width: 992px) {
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-primary:hover {
+    background-color: #9fcdff;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: #9fcdff;
+}
+
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media (min-width: 576px) {
     .container {
-        max-width: 960px;
+        max-width: 540px;
     }
 }
 
@@ -231,14 +254,14 @@ th {
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .container {
-        max-width: 540px;
+        max-width: 960px;
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
     .container {
-        max-width: 540px;
+        max-width: 1140px;
     }
 }

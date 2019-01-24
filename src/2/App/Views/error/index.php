@@ -1,3 +1,8 @@
+<?php
+/** @var $code int */
+/** @var $message string */
+/** @var $params array */
+?>
 <div class="container" id="error">
 
     <h1>ERROR</h1>
