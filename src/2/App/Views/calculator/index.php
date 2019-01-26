@@ -3,7 +3,15 @@
 /** @var $tax_percentage int */
 /** @var $instalments_count int */
 ?>
-<form id="calc_form" action="/calculator/calculate" method="post">
+<form id="calc_form" action="/calculator/calculate" method="post" onsubmit="formSubmit();">
+
+    <input
+            id="user_time"
+            name="user_time"
+            type="hidden"
+            value="0"
+    >
+
     <div class="form-group">
         <label for="car_value">Estimated value of the car</label>
         <input
@@ -43,5 +51,5 @@
         >
     </div>
 
-    <button type="submit" class="btn btn-primary">Calculate</button>
+    <button id="submit_button" type="submit" class="btn btn-primary">Calculate</button>
 </form>

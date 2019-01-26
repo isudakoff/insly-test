@@ -33,8 +33,7 @@ class CalculatorController extends Controller
     public function calculate()
     {
         $commission = 0.17;
-        //$factor = $_POST['user_time'] ? 0.13 : 0.11;
-        $factor = 0.11;
+        $factor = (int)$_POST['user_time'] === 1 ? 0.13 : 0.11;
         $car_value = $_POST['car_value'];
         $tax = $_POST['tax_percentage'] / 100;
         $instalments_number = $_POST['instalments_count'];
