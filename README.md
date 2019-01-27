@@ -27,7 +27,7 @@ foreach ($name as $char) {
 
 Run this command to create tables, and select employee data
 ```bash
-$ docker-compose -f /<path_to_repository_root>/docker-compose.yml exec -T insly_db mysql insly3_2 -u insly -psecret < src/3/sql/answer.sql
+$ docker-compose -f /<path_to_repository_root>/docker-compose.yml exec -T insly_db mysql insly3 -u insly -psecret < src/3/sql/answer.sql
 ```
 
 
