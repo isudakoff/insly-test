@@ -1,5 +1,40 @@
 # Developer Test
 
+## My Comments for answers
+
+After you copy repository run this command:
+```bash
+$ docker-compose -f /<path_to_repository_root>/docker-compose.yml up -d
+```
+
+Then open your browser [http://127.0.0.1:8080](http://127.0.0.1:8080)
+
+### Task 1 answer
+
+```php
+<?php
+
+$name = ['I', 'l', 'y', 'a'];
+
+foreach ($name as $char) {
+    echo $char;
+}
+
+?>
+```
+
+### Task 3 comment
+
+Run this command to create tables, and select employee data
+```bash
+$ docker-compose exec -T insly_db mysql insly3_2 -u insly -psecret < src/3/sql/answer.sql
+```
+
+
+-------------------------------------
+
+
+## Original tasks
 
 ## TASK 1 - Name
 

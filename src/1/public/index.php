@@ -12,15 +12,6 @@
     <div class="row">
         <div id="content">
             <?php
-/*
-                $name = "Ilya";
-                $i = 0;
-
-                while (mb_strlen($name) > $i) {
-                    echo $name[$i];
-                    $i++;
-                }
-*/
 
                 $name = ['I', 'l', 'y', 'a'];
 

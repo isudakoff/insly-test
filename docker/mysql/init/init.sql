@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS `insly3`;
+CREATE USER 'insly'@'%'
+  IDENTIFIED BY 'secret';
+GRANT ALL PRIVILEGES ON `insly3`.* TO 'insly'@'%';
